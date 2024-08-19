@@ -34,7 +34,7 @@ function Hero() {
               }}
             />
           </h1>
-          <p className="indent-8">
+          <p className="indent-8 md:text-start text-cente">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas,
             ullam, sunt aut quo itaque ipsum quaerat quam ut cupiditate ex
             excepturi reiciendis. Libero laboriosam itaque voluptatibus, eos
