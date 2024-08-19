@@ -34,7 +34,7 @@ function Hero() {
               }}
             />
           </h1>
-          <p>
+          <p className="indent-8">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas,
             ullam, sunt aut quo itaque ipsum quaerat quam ut cupiditate ex
             excepturi reiciendis. Libero laboriosam itaque voluptatibus, eos
@@ -61,7 +61,7 @@ function Hero() {
             <img
               src="https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?q=80&w=1980&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
               alt=""
-              className="rounded-lg object-cover shadow-lg hover:scale-90 duration-200"
+              className="rounded-lg object-cover shadow-lg hover:scale-90 duration-300"
             />
           </div>
         </div>

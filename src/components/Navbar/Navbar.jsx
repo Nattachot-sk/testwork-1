@@ -78,7 +78,7 @@ function Navbar() {
                   </a>
                 </li>
                 <li className="px-5 py-2 md:text-[24px] hover:text-white hover:scale-110 duration-200">
-                  <a href="" className="under">
+                  <a href="#content" className="under">
                     ผลงาน
                   </a>
                 </li>

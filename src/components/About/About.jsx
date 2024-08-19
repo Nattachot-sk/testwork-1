@@ -12,7 +12,7 @@ function About() {
             <img
               src="https://plus.unsplash.com/premium_photo-1661964014750-963a28aeddea?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
               alt=""
-              className="w-full h-full object-cover rounded-sm "
+              className="w-full h-full object-cover rounded-sm hover:scale-110 duration-300"
             />
             <div className="w-[200px] h-[100px] md:w-[300px] md:h-[100px] bg-blue-600 absolute left-[100px] md:left-[150px] -bottom-[45px] md:-bottom-[45px] rounded-sm">
               <p className="px-4 md:px-8 py-[16px] md:py-[24px] font-bold text-white text-[14px] md:text-[16px] indent-2">
@@ -24,7 +24,7 @@ function About() {
         <div className="col-span-1 p-5">
           <div className="flex-col mt-20">
             <h1 className="font-bold text-[34px] mb-5">เกี่ยวกับเรา</h1>
-            <p className="px-5 indent-4 w-[90%] mb-5">
+            <p className="px-5 indent-4 mb-5">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem
               quaerat eius ipsa nisi minima labore corrupti laborum autem
               corporis adipisci maxime sequi nesciunt dolores deleniti, eos

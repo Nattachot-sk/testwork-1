@@ -7,6 +7,7 @@ import About from './components/About/About'
 import Service from './components/Serviceme/Service'
 import Contact from './components/Contact/Contact'
 import Footer from './components/Footer/Footer'
+import Content from './components/Content/Content'
 
 function App() {
 
@@ -17,6 +18,7 @@ function App() {
       <Hero />
       <About />
       <Service />
+      <Content />
       <Contact />
       <Footer />
     </>
