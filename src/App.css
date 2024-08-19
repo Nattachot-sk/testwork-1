@@ -1,0 +1,90 @@
+#root {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Kanit", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.slanted-bg {
+  position: relative;
+  overflow: hidden;
+}
+
+.slanted-bg::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgb(131,115,236);
+  background: linear-gradient(90deg, rgba(131,115,236,1) 0%, rgba(66,140,218,1) 47%, rgba(0,212,255,1) 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 65%, 0 100% );
+  z-index: -5 ; /* Place behind other content */
+}
+
+.navbar {
+  width: 100%;
+  height: auto; /* เปลี่ยนความสูงให้เหมาะสม */
+
+ font-size: 12px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  z-index: 100;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  transition: background-color 0.3s, box-shadow 0.3s; /* เพิ่มการเปลี่ยนแปลง */
+  background-color: transparent; /* พื้นหลังโปร่งใสเมื่อเริ่มต้น */
+}
+
+  .navbar.scrolled {
+    background: rgb(131,115,236);
+    background: linear-gradient(90deg, rgba(131,115,236,1) 0%, rgba(66,140,218,1) 47%, rgba(0,212,255,1) 100%); /* เปลี่ยนเป็นพื้นหลังขาวเมื่อ scroll */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* เพิ่มเงา */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    font-size: 12px;
+  }
+
+  .contact-bg {
+    position: relative;
+    overflow: hidden;
+  }
+  .contact-bg::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(https://images.unsplash.com/photo-1505873242700-f289a29e1e0f?q=80&w=2076&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    object-fit: cover;
+    background-size: cover;
+    z-index: -5 ; /* Place behind other content */
+  }
+
+
+  a.under{
+    position: relative;
+    text-transform: uppercase;
+}
+a.under:after{
+  content: "";
+  position: absolute;
+  background-color: aqua;
+  height: 5px;
+  width: 0;
+  left: 0;
+  bottom: -5px;
+  transition: 0.3s;
+  border-radius: 30px;
+}
+a.under:hover:after{
+width: 100%;
+}
