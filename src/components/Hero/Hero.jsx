@@ -16,10 +16,10 @@ function Hero() {
     <div className="w-full h-auto slanted-bg mb-20" id="home">
       <div className="w-full md:w-[1300px] h-auto grid grid-cols-1 md:grid-cols-2 mx-auto pt-40">
         <div className="col-span-1  my-auto w-full  px-10">
-          <h1 className="font-bold text-[32px] text-amber-400 mb-5">
+          <h1 className="font-bold text-[24px] md:text-[32px] text-amber-400 mb-5">
             รับออกแบบห้องทุกรูปแบบ
           </h1>
-          <h1 className="font-bold text-[24px] text-white mb-2">
+          <h1 className="font-bold md:text-[24px] text-[16px] text-white mb-2">
             <Typewriter
               options={{
                 strings: [

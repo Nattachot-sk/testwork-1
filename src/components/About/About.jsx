@@ -5,7 +5,10 @@ import { faGithub, faLine } from "@fortawesome/free-brands-svg-icons";
 
 function About() {
   return (
-    <div className="w-full h-auto md:h-[850px] bg-white mb-20 md:md-0" id="about">
+    <div
+      className="w-full h-auto md:h-[850px] bg-white mb-20 md:md-0"
+      id="about"
+    >
       <div className="w-full  grid grid-cols-1 md:grid-cols-2 mt-10 ">
         <div className="col-span-1 relative my-auto">
           <div className="relative w-[400px] h-[300px] md:w-[550px] md:h-[550px] xl:w-[650px] xl:h-[550px] mx-auto mt-20">
@@ -30,47 +33,78 @@ function About() {
               corporis adipisci maxime sequi nesciunt dolores deleniti, eos
               officia assumenda. Nostrum, pariatur.
             </p>
-            <h1 className="font-bold text-[34px]">ทำไมต้องเลือกเราในการออกแบบ</h1>
+            <h1 className="font-bold text-[34px]">
+              ทำไมต้องเลือกเราในการออกแบบ
+            </h1>
             <hr />
             <ul className="flex-col mb-2 mt-5">
-              <li className="relative flex  items-center  w-full h-[50px] mb-3">
+              <li className="relative flex  items-center  w-full h-[80px] mb-3">
                 <div className="absolute w-10 h-10   bg-orange-600 rounded-full flex justify-center items-center">
                   {" "}
-                  <FontAwesomeIcon icon={faCheck} className="absolute text-[24px] text-white"/>
+                  <FontAwesomeIcon
+                    icon={faCheck}
+                    className="absolute md:text-[24px] text-white"
+                  />
                 </div>
-                <p className="absolute left-20 ">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus, reprehenderit.</p>
+                <p className="absolute left-20 md:text-[16px] text-[14px]">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Temporibus, reprehenderit.
+                </p>
               </li>
-              <li className="relative flex  items-center  w-full h-[50px] mb-3">
+              <li className="relative flex  items-center  w-full h-[80px] mb-3">
                 <div className="absolute w-10 h-10   bg-orange-600 rounded-full flex justify-center items-center">
                   {" "}
-                  <FontAwesomeIcon icon={faCheck} className="absolute text-[24px] text-white"/>
+                  <FontAwesomeIcon
+                    icon={faCheck}
+                    className="absolute md:text-[24px] text-white"
+                  />
                 </div>
-                <p className="absolute left-20 ">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus, reprehenderit.</p>
+                <p className="absolute left-20 md:text-[16px] text-[14px]">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Temporibus, reprehenderit.
+                </p>
               </li>
-              <li className="relative flex  items-center  w-full h-[50px] mb-3">
+              <li className="relative flex  items-center  w-full h-[80px] mb-3">
                 <div className="absolute w-10 h-10   bg-orange-600 rounded-full flex justify-center items-center">
                   {" "}
-                  <FontAwesomeIcon icon={faCheck} className="absolute text-[24px] text-white"/>
+                  <FontAwesomeIcon
+                    icon={faCheck}
+                    className="absolute md:text-[24px] text-white"
+                  />
                 </div>
-                <p className="absolute left-20 ">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus, reprehenderit.</p>
+                <p className="absolute left-20 md:text-[16px] text-[14px]">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Temporibus, reprehenderit.
+                </p>
               </li>
-              <li className="relative flex  items-center  w-full h-[50px] mb-3">
+              <li className="relative flex  items-center  w-full h-[80px] mb-3">
                 <div className="absolute w-10 h-10   bg-orange-600 rounded-full flex justify-center items-center">
                   {" "}
-                  <FontAwesomeIcon icon={faCheck} className="absolute text-[24px] text-white"/>
+                  <FontAwesomeIcon
+                    icon={faCheck}
+                    className="absolute md:text-[24px] text-white"
+                  />
                 </div>
-                <p className="absolute left-20 ">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus, reprehenderit.</p>
+                <p className="absolute left-20 md:text-[16px] text-[14px]">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Temporibus, reprehenderit.
+                </p>
               </li>
-              <li className="relative flex  items-center  w-full h-[50px] mb-3">
+              <li className="relative flex  items-center  w-full h-[80px] mb-3">
                 <div className="absolute w-10 h-10   bg-orange-600 rounded-full flex justify-center items-center">
                   {" "}
-                  <FontAwesomeIcon icon={faCheck} className="absolute text-[24px] text-white"/>
+                  <FontAwesomeIcon
+                    icon={faCheck}
+                    className="absolute md:text-[24px] text-white"
+                  />
                 </div>
-                <p className="absolute left-20 ">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus, reprehenderit.</p>
+                <p className="absolute left-20 md:text-[16px] text-[14px]">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Temporibus, reprehenderit.
+                </p>
               </li>
             </ul>
             <hr />
-
           </div>
         </div>
       </div>

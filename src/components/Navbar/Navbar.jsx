@@ -1,4 +1,6 @@
 import { React, useState, useEffect } from "react";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -18,43 +20,20 @@ function Navbar() {
   }, []);
   return (
     <div className={`navbar ${scrolling ? "scrolled" : ""}`}>
-      
-      <div className="block md:hidden ">
-        <a href="">
-          <img
-            src="vite.svg"
-            alt=""
-            className="absolute left-[220px] bottom-[50px]"
-          />
-        </a>
-      </div>
-      <div className="w-full  h-auto ">
+      <div className="w-full">
         <button
           onClick={() => setIsOpen(!isOpen)}
-          className="block md:hidden p-2  w-full"
+          className="block md:hidden p-2 mt-5 w-full relative"
         >
-          <svg
-            className="w-6 h-6"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="2"
-              d="M4 6h16M4 12h16m-7 6h7"
-            ></path>
-          </svg>
+          <FontAwesomeIcon icon={faBars} className="absolute left-2 -top-2 size-5 duration-200"/>
         </button>
 
         <div
           className={`md:w-[full] md:h-[100px] h-[50px] ${
-            isOpen ? "block bg-transparent h-[100px] rounded-b-2xl" : "hidden"
+            isOpen ? "block bg-transparent  h-[100px] rounded-b-2xl" : "hidden"
           } md:block`}
         >
-          <div className="md:flex md:justify-between md:items-center px-5 mt-5 flex justify-center items-center md:pt-[10px]">
+          <div className="md:flex md:justify-between md:items-center px-5  md:pt-[10px]">
             <div className="hidden md:block">
               <a href="">
                 <img src="vite.svg" alt="" />
@@ -84,9 +63,9 @@ function Navbar() {
                 </li>
               </ul>
             </div>
-            <div>
+            <div className="flex justify-center">
               <a href="#contact">
-                <button className="md:w-[150px] md:h-[50px] w-[100px] h-[40px] bg-orange-300 hover:text-blue-600 rounded-2xl font-bold hover:bg-[#f7d963] hover:border-4 hover:border-orange-200 duration-300 text-[14px]">
+                <button className="md:w-[150px] md:h-[50px] w-[75px] h-[20px] bg-orange-300 hover:text-blue-600 rounded-2xl font-bold hover:bg-[#f7d963] hover:border-4 hover:border-orange-200 duration-300 text-[14px]">
                   ติดต่อเรา
                 </button>
               </a>
