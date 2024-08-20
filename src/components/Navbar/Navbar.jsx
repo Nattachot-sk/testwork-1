@@ -36,7 +36,7 @@ function Navbar() {
           <div className="md:flex md:justify-between md:items-center px-5  md:pt-[10px]">
             <div className="hidden md:block">
               <a href="">
-                <img src="vite.svg" alt="" />
+                <img src="./img/logo.png" alt="" className="w-20 h-20"/>
               </a>
             </div>
             <div>

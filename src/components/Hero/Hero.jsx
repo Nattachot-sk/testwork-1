@@ -1,4 +1,4 @@
-import React from "react";
+import {React,useEffect,useState} from "react";
 import Navbar from "../Navbar/Navbar";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight, faArrowUp } from "@fortawesome/free-solid-svg-icons";
@@ -6,6 +6,23 @@ import { faEvernote } from "@fortawesome/free-brands-svg-icons";
 import Typewriter from "typewriter-effect";
 
 function Hero() {
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    const toggleVisibility = () => {
+      if (window.pageYOffset > 300) {
+        setIsVisible(true);
+      } else {
+        setIsVisible(false);
+      }
+    };
+
+    window.addEventListener('scroll', toggleVisibility);
+
+    return () => {
+      window.removeEventListener('scroll', toggleVisibility);
+    };
+  }, []);
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
@@ -65,12 +82,14 @@ function Hero() {
             />
           </div>
         </div>
+        {isVisible && (
         <button
           onClick={scrollToTop}
-          className="fixed bottom-4 right-4 bg-amber-500 hover:bg-orange-400 text-white px-4 py-2 rounded-md shadow-md "
+          className="fixed bottom-4 right-4 bg-amber-500 hover:bg-orange-400 text-white px-4 py-2 rounded-md shadow-md duration-200"
         >
-         <FontAwesomeIcon icon={faArrowUp} className="animate-bounce"/>
+         <FontAwesomeIcon icon={faArrowUp} />
         </button>
+        )}
       </div>
     </div>
   );
